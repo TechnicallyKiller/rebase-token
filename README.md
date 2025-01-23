@@ -1,66 +1,9 @@
-## Foundry
-
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# CROSS-CHAIN REBASE TOKEN
+1. Create a protocol that allows user to deposit in a vault and in return, They recieve rebase tokens that represent underlying balance
+2. Rebase Token -> balanceOf function is dynamic to show the changing balance with time,
+    -Balance increases linearly with time
+    - mint tokens to our users everytime they perform an action (minting, burning , transferring or bridging)
+3. Interest rate 
+    -Indiviually set interest rate or each user based on global interest rate at the protocol at the time
+    -  this global interest rate can only decrease to incetivise reward early adopters.
+    
